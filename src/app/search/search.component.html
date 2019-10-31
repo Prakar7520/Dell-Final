@@ -1,2 +1,14 @@
-<h2>Enter the service tag,model</h2>
-<input type="text" id="input1" placeholder="Enter your model or service tag" style="height: 4vh; width: 20vw;"><button mat-button color=primary>CHECK</button>
+<h2>Search the problem and find the solution</h2>
+<select [(ngModel)]="first">
+    <option value="heating issue">heating issue</option>
+    <option value="laptop running slow">laptop running slow</option>
+    <option value="PowerOn booting error">PoweOn booting error</option>
+    <option value="refuse to charge">refuse to charge</option>
+    <option value="no internet">no internet</option>
+    <option value="black screen">black screen</option>
+</select>
+<ol *ngFor="let i of prob_list">
+    <li *ngIf="first==i.p">{{i.s1}}</li>
+    <li *ngIf="first==i.p">{{i.s2}}</li>
+    <li *ngIf="first==i.p">{{i.s3}}</li>
+</ol>

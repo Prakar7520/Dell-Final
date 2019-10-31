@@ -16,6 +16,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { BackscreenComponent } from './backscreen/backscreen.component'; 
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import {MatInputModule} from '@angular/material/input';  
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     MatMenuModule,
     MatButtonModule,
+    FormsModule,
     MatCardModule,
     MatDividerModule,
     MatButtonToggleModule,
